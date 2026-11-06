@@ -14,7 +14,7 @@ import { DOMParser as LinkeDOMParser } from "linkedom";
 import { spawn } from "node:child_process";
 import { mkdir, writeFile, rm, readdir, readFile, stat } from "node:fs/promises";
 import path from "node:path";
-import { readAuthoredTimeline } from "../shared/timeline";
+import { readAuthoredTimeline } from "../shared/timeline.js";
 
 // @hyperframes/lint and shared/timeline expect the browser DOMParser; linkedom provides one.
 (globalThis as { DOMParser?: unknown }).DOMParser ??= LinkeDOMParser;

@@ -8,9 +8,9 @@ import { streamText, convertToModelMessages, stepCountIs, createUIMessageStream,
 import { anthropic } from "@ai-sdk/anthropic";
 import { createBashTool } from "bash-tool";
 import path from "node:path";
-import { createSandbox, WORKSPACE } from "./sandbox";
-import { buildSystemPrompt } from "./prompt";
-import { createImageAwareReadFile } from "./tools";
+import { createSandbox, WORKSPACE } from "./sandbox.js";
+import { buildSystemPrompt } from "./prompt.js";
+import { createImageAwareReadFile } from "./tools.js";
 
 const MODEL = process.env.MODEL ?? "claude-sonnet-5-5";
 /** Host-bridged commands (Chrome + FFmpeg) only when running on a real machine. */

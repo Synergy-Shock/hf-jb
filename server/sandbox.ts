@@ -6,7 +6,7 @@
 import { Bash, InMemoryFs } from "just-bash";
 import type { IFileSystem } from "just-bash";
 import path from "node:path";
-import { createHyperframesCommand, walkVirtual } from "./hf-bridge";
+import { createHyperframesCommand, walkVirtual } from "./hf-bridge.js";
 
 export const WORKSPACE = "/workspace";
 

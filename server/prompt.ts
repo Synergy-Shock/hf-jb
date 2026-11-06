@@ -5,7 +5,7 @@
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import os from "node:os";
-import { SKILL_BUNDLE } from "../shared/skill-bundle";
+import { SKILL_BUNDLE } from "../shared/skill-bundle.js";
 
 const SKILL_DIR = process.env.HF_SKILL_DIR ?? path.join(os.homedir(), ".claude/skills/hyperframes");
 

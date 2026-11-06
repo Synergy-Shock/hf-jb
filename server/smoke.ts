@@ -6,8 +6,8 @@
  */
 import path from "node:path";
 import { readFile } from "node:fs/promises";
-import { createSandbox, BINARY_PREFIX } from "./sandbox";
-import { SCAFFOLD } from "../shared/scaffold";
+import { createSandbox, BINARY_PREFIX } from "./sandbox.js";
+import { SCAFFOLD } from "../shared/scaffold.js";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const png = await readFile(path.join(ROOT, "node_modules/@hyperframes/studio/dist/favicon.svg")).catch(() => Buffer.from("<svg/>"));
