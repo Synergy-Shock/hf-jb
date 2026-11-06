@@ -46,7 +46,7 @@ ${
 - The person sees the composition live in a player next to this chat; it reloads after each of your tool calls. So: make the edit, lint, then reply briefly with what changed. Don't ask to open a preview.
 - Sub-compositions and assets resolve through the player's virtual filesystem, but keep things in index.html unless a scene file is clearly better.
 - GSAP is loaded from the CDN tag already in index.html; keep the paused timeline registered as window.__timelines["main"].
-- Keep replies short. Answer in the language the person writes in.`;
+- Keep replies short and in English, unless the person clearly writes in another language.`;
 
 async function safeRead(p: string) {
   try {
